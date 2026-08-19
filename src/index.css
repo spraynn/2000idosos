@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Outfit', 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Montserrat', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Gradients & Styling Utilities */
+.gradient-heading {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 16px rgba(168, 85, 247, 0.35));
+}
+
+.gradient-heading-green {
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #22c55e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 16px rgba(34, 197, 94, 0.35));
+}
+
+.gradient-heading-yellow {
+  background: linear-gradient(90deg, #ca8a04, #facc15);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 12px rgba(234, 179, 8, 0.3));
+}
+
+.gradient-bar {
+  background: linear-gradient(90deg, #7c3aed, #ec4899 60%, #f97316);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  animation: cta-pulse 2s ease-in-out infinite;
+  box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.55);
+}
+
+.gradient-cta:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-1px);
+}
+
+.gradient-countdown {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+}
+
+.gradient-icon {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+}
+
+.gradient-icon-green {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+.bonus-card {
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+  border: 2px solid #86efac;
+}
+
+.premium-card {
+  background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
+  border: 2px solid #a855f7;
+}
+
+.gradient-premium-badge {
+  background: linear-gradient(135deg, #7c3aed, #a855f7, #c084fc);
+}
+
+@keyframes cta-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.55);
+  }
+  50% {
+    box-shadow: 0 15px 35px -5px rgba(34, 197, 94, 0.75);
+  }
+}
