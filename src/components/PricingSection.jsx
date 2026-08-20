@@ -57,7 +57,7 @@ export default function PricingSection({ onBasicClick }) {
               <div className="text-center mb-4">
                 <div className="text-slate-400 line-through text-sm font-semibold">R$97</div>
                 <div className="text-4xl sm:text-5xl font-extrabold text-slate-900 my-1">
-                  R$10
+                  R$9,90
                 </div>
                 <div className="text-xs text-slate-500 font-medium">pagamento único</div>
               </div>
@@ -125,11 +125,11 @@ export default function PricingSection({ onBasicClick }) {
               <div className="text-center mb-2">
                 <div className="text-slate-400 line-through text-sm font-semibold">R$156</div>
                 <div className="text-5xl sm:text-6xl font-extrabold text-green-600 my-1">
-                  R$20
+                  R$27,90
                 </div>
                 <div className="text-xs text-slate-500 font-medium">pagamento único</div>
                 <div className="text-xs sm:text-sm text-green-600 font-bold mt-2 bg-green-50 py-1 px-3 rounded-full inline-block border border-green-200">
-                  Você economiza R$136,00 + R$147 em bônus
+                  Você economiza R$128,10 + R$147 em bônus
                 </div>
               </div>
 
@@ -159,7 +159,7 @@ export default function PricingSection({ onBasicClick }) {
             </div>
 
             <a
-              href="https://pay.wiapy.com/EgOwWvX2zI"
+              href="https://pay.wiapy.com/hyGiO016LAxy"
               className="gradient-cta flex items-center justify-center w-full px-8 py-5 rounded-full text-white font-extrabold text-base sm:text-lg uppercase tracking-wider shadow-xl transition-all cursor-pointer transform active:scale-95"
             >
               <ShoppingCart className="w-5 h-5 mr-2" />

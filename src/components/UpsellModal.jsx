@@ -30,7 +30,7 @@ export default function UpsellModal({ isOpen, onClose }) {
           </div>
 
           <h3 className="text-2xl sm:text-3xl font-black leading-tight">
-            Espera! Leve o <span className="italic underline underline-offset-4 decoration-yellow-300">Completo</span> por R$15
+            Espera! Leve o <span className="italic underline underline-offset-4 decoration-yellow-300">Completo</span> por R$17
           </h3>
 
           <p className="text-white/90 pt-2 text-xs sm:text-sm font-medium">
@@ -63,7 +63,7 @@ export default function UpsellModal({ isOpen, onClose }) {
               </span>
             </div>
             <div className="text-4xl sm:text-5xl font-black text-green-600 leading-none mt-1">
-              R$15
+              R$17
             </div>
             <div className="text-xs text-slate-500 font-medium mt-1">
               pagamento único • acesso vitalício
@@ -80,15 +80,15 @@ export default function UpsellModal({ isOpen, onClose }) {
           {/* Buttons */}
           <div className="space-y-2.5 pt-1">
             <a
-              href="https://pay.wiapy.com/4ndvhspVh1"
+              href="https://pay.wiapy.com/UQoxPfiXi1l2"
               className="gradient-cta flex items-center justify-center w-full px-6 py-4 rounded-full text-white font-extrabold uppercase text-sm shadow-xl transition-all cursor-pointer transform active:scale-95"
             >
               <ArrowRight className="w-4 h-4 mr-2" />
-              Quero o Completo por R$15
+              Quero o Completo por R$17
             </a>
 
             <a
-              href="https://pay.wiapy.com/8nspkw3WX"
+              href="https://pay.wiapy.com/EilLNymRsXCH"
               className="flex items-center justify-center w-full px-6 py-3 rounded-full border border-slate-300 bg-white text-slate-600 font-bold uppercase text-xs hover:bg-slate-50 transition-colors text-center"
             >
               Continuar com o Plano Básico

@@ -22,7 +22,7 @@ export default function GuaranteeSection() {
         </p>
 
         <a
-          href="https://pay.wiapy.com/EgOwWvX2zI"
+          href="https://pay.wiapy.com/hyGiO016LAxy"
           className="gradient-cta inline-flex items-center justify-center px-8 py-5 rounded-full text-white font-extrabold text-base sm:text-lg uppercase tracking-wider shadow-2xl transition-all cursor-pointer transform active:scale-95"
         >
           <ShieldCheck className="w-5 h-5 mr-2" />
