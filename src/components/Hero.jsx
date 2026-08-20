@@ -81,22 +81,13 @@ export default function Hero() {
           />
         </div>
 
-        {/* Video Player Section */}
-        <div className="mt-10 mb-8 max-w-2xl mx-auto">
+        {/* Video Player Section (Wistia VSL d0sxohd3av) */}
+        <div className="mt-10 mb-8 max-w-xs sm:max-w-sm mx-auto">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center justify-center gap-2">
             Assista esse vídeo para ver o que vai receber:
           </h2>
-          <div className="relative w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-            <iframe
-              src="https://fast.wistia.net/embed/iframe/dzmm74kc01?seo=false&videoFoam=true"
-              title="Vídeo de Apresentação do Kit"
-              allow="autoplay; fullscreen"
-              allowTransparency="true"
-              frameBorder="0"
-              scrolling="no"
-              className="w-full h-full rounded-xl"
-              name="wistia_embed"
-            ></iframe>
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
+            <wistia-player media-id="d0sxohd3av" aspect="0.5625"></wistia-player>
           </div>
         </div>
 
