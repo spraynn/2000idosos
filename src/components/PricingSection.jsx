@@ -24,7 +24,7 @@ export default function PricingSection({ onBasicClick }) {
   ];
 
   return (
-    <section id="pricing" className="px-4 py-16 bg-slate-50 scroll-mt-24 border-t border-slate-200">
+    <section id="pricing" className="px-4 py-16 bg-slate-50 scroll-mt-12 border-t border-slate-200">
       <div className="max-w-5xl mx-auto space-y-10">
         
         {/* Social Proof Counter Badge */}
@@ -42,7 +42,7 @@ export default function PricingSection({ onBasicClick }) {
         </div>
 
         {/* Pricing Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
+        <div id="pricing-cards" className="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto scroll-mt-20">
           
           {/* Basic Plan Card */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative hover:border-slate-300 transition-all">

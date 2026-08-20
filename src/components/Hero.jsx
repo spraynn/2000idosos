@@ -4,9 +4,9 @@ import { Star, ArrowRight, MessageCircle, ShieldCheck } from 'lucide-react';
 export default function Hero() {
   const scrollToPricing = (e) => {
     e.preventDefault();
-    const element = document.getElementById('pricing');
+    const element = document.getElementById('pricing-cards') || document.getElementById('pricing');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
 
