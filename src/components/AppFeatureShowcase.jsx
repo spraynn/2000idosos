@@ -17,7 +17,10 @@ export default function AppFeatureShowcase() {
   const screens = [
     { src: '/assets/app-screen-1.jpg', alt: 'Central Sênior - Exercício Sentar e Levantar' },
     { src: '/assets/app-screen-2.jpg', alt: 'Central Sênior - Montar Nova Ficha de Treino' },
-    { src: '/assets/app-screen-3.jpg', alt: 'Central Sênior - Atividades Cognitivas' },
+    { src: '/assets/app-screen-3.jpg', alt: 'Central Sênior - Meus Alunos e Clientes' },
+    { src: '/assets/app-screen-4.jpg', alt: 'Central Sênior - Cronômetro Integrado 02:00' },
+    { src: '/assets/app-screen-5.jpg', alt: 'Central Sênior - Calendário de Atendimentos' },
+    { src: '/assets/app-screen-6.jpg', alt: 'Central Sênior - Atividades Cognitivas' },
   ];
 
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -80,7 +83,7 @@ export default function AppFeatureShowcase() {
         {/* Main Content: Phone Mockup & 8 Features */}
         <div className="grid lg:grid-cols-12 gap-8 items-center pt-4">
           
-          {/* Left Column: Phone Mockup with Auto-Swapping Screenshots */}
+          {/* Left Column: Phone Mockup with Auto-Swapping Screenshots (All 6 Screens) */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[300px] sm:max-w-[330px]">
               {/* Green Glow */}
