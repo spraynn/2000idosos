@@ -50,13 +50,13 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.08] mb-5">
-          <span className="text-slate-900 block sm:inline">Seu atendimento com idosos, </span>
-          <span className="text-green-600 block sm:inline">em um só lugar.</span>
+          <span className="text-green-600 block sm:inline">+2000 EXERCÍCIOS</span>
+          <span className="text-slate-900 block sm:inline"> PARA IDOSOS</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-          +2.000 exercícios, seus alunos, fichas, calendário e treinos, exercícios e atividades organizados dentro da Central Sênior. <span className="inline-block animate-pulse">🧓✨</span>
+          exercícios adaptados, organizados por nível e objetivo para transformar seus atendimentos <span className="inline-block animate-pulse">🧓✨</span>
         </p>
 
         {/* Key Bullet Pills */}
