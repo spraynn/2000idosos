@@ -11,15 +11,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative px-4 pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden bg-gradient-to-b from-purple-50/70 via-white to-slate-50">
+    <section className="relative px-4 pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden bg-gradient-to-b from-orange-50/70 via-white to-slate-50">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         
-        {/* Brand Logo (Reduced size) */}
+        {/* Brand Logo (Central Sênior) */}
         <div className="mb-3 flex justify-center">
           <img
             src="/assets/hero-logo-new.png"
-            alt="Logo +2000 Exercícios para Idosos"
-            className="w-28 sm:w-36 h-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300"
+            alt="Logo Central Sênior - +2000 Exercícios para Idosos"
+            className="w-48 sm:w-64 h-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300"
           />
         </div>
 
@@ -41,7 +41,7 @@ export default function Hero() {
 
           {/* 2-line Text Block */}
           <div className="text-left font-bold text-slate-800 text-xs sm:text-sm leading-tight tracking-tight pl-2.5 border-l border-slate-200">
-            <div><span className="text-purple-700 font-extrabold">4.9/5</span> por mais de 1.700</div>
+            <div><span className="text-orange-600 font-extrabold">4.9/5</span> por mais de 1.700</div>
             <div className="text-slate-600 font-semibold">profissionais</div>
           </div>
         </div>
@@ -59,20 +59,20 @@ export default function Hero() {
 
         {/* Key Bullet Pills */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 mb-8">
-          <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-purple-100/80 border border-purple-200 text-purple-950 font-bold text-xs sm:text-sm shadow-xs">
-            <ShieldCheck className="w-4 h-4 text-purple-600" />
+          <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-orange-100/80 border border-orange-200 text-orange-950 font-bold text-xs sm:text-sm shadow-xs">
+            <ShieldCheck className="w-4 h-4 text-orange-600" />
             Sem montar sessão do zero
           </span>
-          <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-purple-100/80 border border-purple-200 text-purple-950 font-bold text-xs sm:text-sm shadow-xs">
-            <ShieldCheck className="w-4 h-4 text-purple-600" />
+          <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-orange-100/80 border border-orange-200 text-orange-950 font-bold text-xs sm:text-sm shadow-xs">
+            <ShieldCheck className="w-4 h-4 text-orange-600" />
             Sem improvisar no atendimento
           </span>
         </div>
 
         {/* Hero Product Mockup */}
         <div className="relative max-w-2xl mx-auto my-8">
-          {/* Pink/Purple Shadow Glow */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/30 to-pink-500/30 rounded-full blur-3xl -z-10 transform scale-110"></div>
+          {/* Orange/Amber Shadow Glow */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/30 to-amber-500/30 rounded-full blur-3xl -z-10 transform scale-110"></div>
           <img
             src="/assets/hero-mockup-new.png"
             alt="Kit +2000 Exercícios para Idosos"

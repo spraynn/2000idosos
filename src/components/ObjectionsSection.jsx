@@ -39,9 +39,9 @@ export default function ObjectionsSection() {
               className="rounded-2xl bg-white p-5 sm:p-6 shadow-sm border border-slate-200 hover:shadow-md transition-all duration-300"
             >
               <h3 className="font-bold text-base sm:text-lg text-slate-900 mb-2 flex items-start gap-2">
-                <span className="text-purple-600 font-extrabold">"</span>
+                <span className="text-orange-600 font-extrabold">"</span>
                 {item.obj}
-                <span className="text-purple-600 font-extrabold">"</span>
+                <span className="text-orange-600 font-extrabold">"</span>
               </h3>
               <p className="text-green-700 font-medium text-sm sm:text-base leading-relaxed flex items-start gap-2">
                 <span className="shrink-0">👉</span>

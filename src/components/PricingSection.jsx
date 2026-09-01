@@ -97,10 +97,10 @@ export default function PricingSection({ onBasicClick }) {
           </div>
 
           {/* Complete Plan Card (Highlighted) */}
-          <div className="premium-card rounded-3xl p-6 sm:p-8 shadow-2xl shadow-purple-500/20 relative flex flex-col justify-between border-2 border-purple-500">
+          <div className="premium-card rounded-3xl p-6 sm:p-8 shadow-2xl shadow-orange-500/20 relative flex flex-col justify-between border-2 border-orange-500">
             
             {/* Highlight Badge */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 gradient-premium-badge text-white text-xs font-extrabold px-6 py-2 rounded-full uppercase tracking-wider shadow-lg shadow-purple-500/40">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 gradient-premium-badge text-white text-xs font-extrabold px-6 py-2 rounded-full uppercase tracking-wider shadow-lg shadow-orange-500/40">
               Mais Escolhido
             </div>
 
@@ -108,13 +108,13 @@ export default function PricingSection({ onBasicClick }) {
               <h3 className="text-2xl sm:text-3xl font-extrabold text-center mb-1 mt-2 text-slate-900">
                 Kit Completo
               </h3>
-              <p className="text-center text-xs font-bold text-purple-700 uppercase tracking-widest mb-2">
+              <p className="text-center text-xs font-bold text-orange-700 uppercase tracking-widest mb-2">
                 Acesso total + 3 Bônus
               </p>
 
               {/* Hero Mockup Image Above Price */}
               <div className="relative my-3 max-w-xs mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-pink-500/20 rounded-full blur-2xl -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 rounded-full blur-2xl -z-10"></div>
                 <img
                   src="/assets/hero-mockup-new.png"
                   alt="Mockup Kit Completo"
@@ -142,15 +142,15 @@ export default function PricingSection({ onBasicClick }) {
                 </div>
               </div>
 
-              <ul className="space-y-3 text-sm text-slate-800 mb-8 border-t border-purple-100 pt-5">
+              <ul className="space-y-3 text-sm text-slate-800 mb-8 border-t border-orange-100 pt-5">
                 {completeItems.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
                     {item.bonus ? (
-                      <Gift className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
+                      <Gift className="w-5 h-5 text-orange-600 shrink-0 mt-0.5" />
                     ) : (
                       <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
                     )}
-                    <span className={item.bonus ? 'text-purple-700 font-bold' : 'font-semibold text-slate-800'}>
+                    <span className={item.bonus ? 'text-orange-700 font-bold' : 'font-semibold text-slate-800'}>
                       {item.txt}
                     </span>
                   </li>

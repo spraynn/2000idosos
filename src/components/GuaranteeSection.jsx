@@ -4,10 +4,10 @@ import { ShieldCheck, ArrowRight } from 'lucide-react';
 export default function GuaranteeSection() {
   return (
     <section className="px-4 py-16 bg-white border-t border-slate-100">
-      <div className="max-w-3xl mx-auto text-center rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 border border-purple-100 shadow-2xl shadow-purple-500/20">
+      <div className="max-w-3xl mx-auto text-center rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-orange-50 via-amber-50 to-orange-50 border border-orange-100 shadow-2xl shadow-orange-500/20">
         
         {/* Shield Icon Badge */}
-        <div className="gradient-icon w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-purple-500/30 transform hover:scale-105 transition-transform">
+        <div className="gradient-icon w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-orange-500/30 transform hover:scale-105 transition-transform">
           <ShieldCheck className="w-10 h-10 text-white" />
         </div>
 

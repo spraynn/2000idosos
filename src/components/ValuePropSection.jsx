@@ -17,12 +17,12 @@ export default function ValuePropSection() {
           <h2 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-tight">
             Por que os <br className="hidden sm:block" />
             profissionais escolhem{' '}
-            <span className="gradient-heading-blue italic font-serif">esse kit?</span>
+            <span className="gradient-heading-green italic font-serif">esse kit?</span>
           </h2>
           <div className="w-24 h-1.5 gradient-bar mx-auto rounded-full mt-4 mb-8"></div>
         </div>
 
-        {/* Overlapping Mockup & Blue Card Wrapper */}
+        {/* Overlapping Mockup & Green Card Wrapper */}
         <div className="relative pt-6">
           
           {/* Overlapping Mockup Image */}
@@ -35,8 +35,8 @@ export default function ValuePropSection() {
             />
           </div>
 
-          {/* Blue Container Card */}
-          <div className="relative bg-gradient-to-b from-[#007be5] via-[#006bd6] to-[#0052b8] rounded-[2.5rem] pt-24 sm:pt-36 pb-10 sm:pb-12 px-6 sm:px-12 text-white shadow-2xl shadow-blue-500/25 border border-blue-400/30 space-y-6 text-base sm:text-lg leading-relaxed text-center sm:text-left z-10">
+          {/* Green Container Card */}
+          <div className="relative bg-gradient-to-b from-[#15803d] via-[#16a34a] to-[#0f766e] rounded-[2.5rem] pt-24 sm:pt-36 pb-10 sm:pb-12 px-6 sm:px-12 text-white shadow-2xl shadow-green-600/25 border border-green-400/30 space-y-6 text-base sm:text-lg leading-relaxed text-center sm:text-left z-10">
             <p>
               O <strong className="font-extrabold text-white">Kit +1000 Atividades</strong> é um material completo de exercícios adaptados para idosos, organizado <strong className="font-extrabold text-white">por nível, objetivo e tipo de exercício</strong>, preparando você para atender, planejar e aplicar a sessão com confiança, simplificando a rotina de quem trabalha com a terceira idade todos os dias.
             </p>

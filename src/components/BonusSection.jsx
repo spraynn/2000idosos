@@ -24,14 +24,14 @@ export default function BonusSection() {
   ];
 
   return (
-    <section className="px-4 py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-purple-50/40 border-t border-slate-200">
+    <section className="px-4 py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-orange-50/40 border-t border-slate-200">
       <div className="max-w-6xl mx-auto space-y-12">
         
         {/* Title Badge */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 rounded-full bg-purple-100 border border-purple-200 shadow-sm">
-            <Gift className="w-4 h-4 text-purple-700" />
-            <span className="text-xs font-bold uppercase tracking-widest text-purple-700">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 rounded-full bg-orange-100 border border-orange-200 shadow-sm">
+            <Gift className="w-4 h-4 text-orange-700" />
+            <span className="text-xs font-bold uppercase tracking-widest text-orange-700">
               Bônus exclusivos
             </span>
           </div>
@@ -50,7 +50,7 @@ export default function BonusSection() {
               key={idx}
               className="bonus-card rounded-3xl p-6 shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col text-center"
             >
-              <div className="bg-gradient-to-b from-purple-50/80 to-white rounded-2xl mb-5 p-4 flex items-center justify-center min-h-[220px]">
+              <div className="bg-gradient-to-b from-orange-50/80 to-white rounded-2xl mb-5 p-4 flex items-center justify-center min-h-[220px]">
                 <img
                   src={b.img}
                   alt={b.title}

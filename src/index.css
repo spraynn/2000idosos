@@ -17,11 +17,11 @@ html {
 
 /* Custom Gradients & Styling Utilities */
 .gradient-heading {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f97316 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 4px 16px rgba(168, 85, 247, 0.35));
+  filter: drop-shadow(0 4px 16px rgba(249, 115, 22, 0.35));
 }
 
 .gradient-heading-green {
@@ -41,7 +41,7 @@ html {
 }
 
 .gradient-bar {
-  background: linear-gradient(90deg, #7c3aed, #ec4899 60%, #f97316);
+  background: linear-gradient(90deg, #16a34a, #ea580c 60%, #f97316);
 }
 
 .gradient-cta {
@@ -60,7 +60,7 @@ html {
 }
 
 .gradient-icon {
-  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  background: linear-gradient(135deg, #ea580c, #f97316);
 }
 
 .gradient-icon-green {
@@ -73,12 +73,12 @@ html {
 }
 
 .premium-card {
-  background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
-  border: 2px solid #a855f7;
+  background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+  border: 2px solid #f97316;
 }
 
 .gradient-premium-badge {
-  background: linear-gradient(135deg, #7c3aed, #a855f7, #c084fc);
+  background: linear-gradient(135deg, #c2410c, #ea580c, #f97316);
 }
 
 @keyframes cta-pulse {

@@ -7,7 +7,7 @@ export default function UpsellModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm animate-in fade-in duration-200">
       <div
-        className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-purple-200 animate-in zoom-in-95 duration-200"
+        className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden border border-orange-200 animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -20,7 +20,7 @@ export default function UpsellModal({ isOpen, onClose }) {
         </button>
 
         {/* Top Header */}
-        <div className="relative px-6 pt-8 pb-6 text-center bg-gradient-to-br from-purple-600 via-fuchsia-600 to-pink-600 text-white">
+        <div className="relative px-6 pt-8 pb-6 text-center bg-gradient-to-br from-orange-600 via-amber-600 to-orange-500 text-white">
           <div className="mx-auto w-14 h-14 rounded-2xl bg-white/20 backdrop-blur flex items-center justify-center mb-3 shadow-lg">
             <Gift className="w-7 h-7 text-white" />
           </div>
