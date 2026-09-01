@@ -48,15 +48,15 @@ export default function Hero() {
           A plataforma completa para profissionais que trabalham com idosos
         </p>
 
-        {/* Headline (+2.000 EXERCÍCIOS in Green) */}
+        {/* Headline */}
         <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.08] mb-5">
-          <span className="text-green-600 block sm:inline">+2.000 EXERCÍCIOS</span>
-          <span className="text-slate-900 block sm:inline"> E ATIVIDADES PARA IDOSOS</span>
+          <span className="text-slate-900 block sm:inline">Seu atendimento com idosos, </span>
+          <span className="text-green-600 block sm:inline">em um só lugar.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-          Tenha um verdadeiro arsenal de exercícios, atividades e ferramentas para planejar, organizar e facilitar seus atendimentos. <span className="inline-block animate-pulse">🧓✨</span>
+          +2.000 exercícios, seus alunos, fichas, calendário e treinos, exercícios e atividades organizados dentro da Central Sênior. <span className="inline-block animate-pulse">🧓✨</span>
         </p>
 
         {/* Key Bullet Pills */}
