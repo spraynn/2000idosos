@@ -102,12 +102,12 @@ export default function PricingSection({ onBasicClick }) {
               </p>
 
               {/* Hero Mockup Image Above Price */}
-              <div className="relative my-3 max-w-xs mx-auto">
+              <div className="relative my-4 max-w-sm mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-emerald-500/20 rounded-full blur-2xl -z-10"></div>
                 <img
                   src="/assets/hero-mockup-new.png"
                   alt="Mockup Central Sênior Completa"
-                  className="w-full h-auto max-h-44 object-contain drop-shadow-xl mx-auto"
+                  className="w-full h-auto max-h-52 sm:max-h-60 object-contain drop-shadow-xl mx-auto hover:scale-105 transition-transform duration-300"
                 />
               </div>
 

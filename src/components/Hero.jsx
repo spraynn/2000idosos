@@ -11,15 +11,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative px-4 pt-8 pb-16 lg:pt-12 lg:pb-24 overflow-hidden bg-gradient-to-b from-green-50/60 via-white to-slate-50">
+    <section className="relative px-4 pt-6 pb-16 lg:pt-10 lg:pb-24 overflow-hidden bg-gradient-to-b from-green-50/60 via-white to-slate-50">
       <div className="max-w-4xl mx-auto text-center relative z-10">
         
-        {/* Brand Logo (Central Sênior) */}
-        <div className="mb-3 flex justify-center">
+        {/* Brand Logo (Visible on mobile; on desktop it's in the left navbar menu) */}
+        <div className="mb-4 flex justify-center md:hidden">
           <img
             src="/assets/hero-logo-new.png"
             alt="Central Sênior Logo"
-            className="w-48 sm:w-64 h-auto object-contain drop-shadow-sm hover:scale-105 transition-transform duration-300"
+            className="w-48 h-auto object-contain drop-shadow-xs"
           />
         </div>
 
@@ -71,13 +71,13 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Hero Product Mockup with GREEN Glow Shadow */}
-        <div className="relative max-w-2xl mx-auto my-8">
-          <div className="absolute inset-0 bg-gradient-to-tr from-green-500/30 to-emerald-500/30 rounded-full blur-3xl -z-10 transform scale-110"></div>
+        {/* Brand New Hero Product Mockup */}
+        <div className="relative max-w-3xl mx-auto my-8">
+          <div className="absolute inset-0 bg-gradient-to-tr from-green-500/25 to-emerald-500/25 rounded-full blur-3xl -z-10 transform scale-110"></div>
           <img
             src="/assets/hero-mockup-new.png"
-            alt="Central Sênior - +2.000 Exercícios para Idosos"
-            className="w-full h-auto max-w-xl mx-auto drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+            alt="Kit Central Sênior +2000 Exercícios para Idosos"
+            className="w-full h-auto max-w-2xl sm:max-w-3xl mx-auto drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500"
             loading="eager"
           />
         </div>
