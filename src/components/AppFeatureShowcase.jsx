@@ -15,8 +15,10 @@ import {
 
 export default function AppFeatureShowcase() {
   const screens = [
+    { src: '/assets/app-screen-8.jpg', alt: 'Central Sênior - Início & Busca de Exercícios' },
     { src: '/assets/app-screen-1.jpg', alt: 'Central Sênior - Exercício Sentar e Levantar' },
     { src: '/assets/app-screen-2.jpg', alt: 'Central Sênior - Montar Nova Ficha de Treino' },
+    { src: '/assets/app-screen-7.jpg', alt: 'Central Sênior - Dados da Ficha & Aluno' },
     { src: '/assets/app-screen-3.jpg', alt: 'Central Sênior - Meus Alunos e Clientes' },
     { src: '/assets/app-screen-4.jpg', alt: 'Central Sênior - Cronômetro Integrado 02:00' },
     { src: '/assets/app-screen-5.jpg', alt: 'Central Sênior - Calendário de Atendimentos' },
@@ -83,7 +85,7 @@ export default function AppFeatureShowcase() {
         {/* Main Content: Phone Mockup & 8 Features */}
         <div className="grid lg:grid-cols-12 gap-8 items-center pt-4">
           
-          {/* Left Column: Phone Mockup with Auto-Swapping Screenshots (All 6 Screens) */}
+          {/* Left Column: Phone Mockup with Auto-Swapping Screenshots (All 8 Screens) */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[300px] sm:max-w-[330px]">
               {/* Green Glow */}
@@ -134,7 +136,7 @@ export default function AppFeatureShowcase() {
                       onClick={() => setCurrentScreen(idx)}
                       aria-label={`Tela ${idx + 1}`}
                       className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                        idx === currentScreen ? 'w-6 bg-green-500' : 'w-2 bg-slate-700'
+                        idx === currentScreen ? 'w-5 bg-green-500' : 'w-1.5 bg-slate-700'
                       }`}
                     ></button>
                   ))}
