@@ -5,33 +5,28 @@ export default function PageCarousel() {
   const pages = [
     {
       src: '/assets/preview-equipamentos-BRAxkuH6.webp',
-      alt: 'Página de Exercícios com Equipamentos',
-      title: 'Página de Exercícios com Equipamentos',
+      alt: 'Biblioteca de Exercícios',
+      title: 'Biblioteca de Exercícios (+2.000 exercícios e atividades)',
     },
     {
       src: '/assets/preview-alongamentos-BPg1uzwA.webp',
-      alt: 'Página de Alongamentos e Mobilidade',
-      title: 'Página de Alongamentos e Mobilidade',
+      alt: 'Exercícios sem Equipamentos',
+      title: 'Exercícios sem Equipamentos (Atividades com poucos recursos)',
     },
     {
       src: '/assets/preview-cognitivo-C2cm29fx.webp',
-      alt: 'Página de Exercícios Cognitivos',
-      title: 'Página de Exercícios Cognitivos',
+      alt: 'Exercícios Cognitivos',
+      title: 'Exercícios Cognitivos (Estímulo cognitivo, memória e atenção)',
     },
     {
       src: '/assets/guia-avaliacao-mobilidade-CrP8j3wg.webp',
-      alt: 'Guia de Avaliação da Mobilidade',
-      title: 'Guia de Avaliação da Mobilidade',
+      alt: 'Dinâmicas para Idosos',
+      title: 'Dinâmicas para Idosos (Atividades individuais e em grupo)',
     },
     {
       src: '/assets/ficha-anamnese-idosos-DMt-750X.webp',
-      alt: 'Ficha de Anamnese e Acompanhamento',
-      title: 'Ficha de Anamnese e Acompanhamento',
-    },
-    {
-      src: '/assets/bonus-recuperacao-mockup-CbGfKf1l.webp',
-      alt: 'Bônus de Atividades de Recuperação Física',
-      title: 'Bônus de Atividades de Recuperação Física',
+      alt: 'Fichas e Ferramentas Profissionais',
+      title: 'Fichas e Ferramentas Profissionais (Organização e acompanhamento)',
     },
   ];
 
@@ -51,18 +46,18 @@ export default function PageCarousel() {
         
         {/* Title */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-full bg-orange-50 border border-orange-200">
-            <Eye className="w-4 h-4 text-orange-600" />
-            <span className="text-xs font-bold uppercase tracking-wider text-orange-700">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-full bg-green-50 border border-green-200">
+            <Eye className="w-4 h-4 text-green-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-green-700">
               Espie Por Dentro
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Veja Algumas <span className="gradient-heading italic">Páginas do Kit</span>
+            Veja tudo o que você <span className="gradient-heading italic">encontra dentro da Central</span>
           </h2>
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
           <p className="text-slate-600 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            Material 100% ilustrado, em alta resolução e pronto pra imprimir ou usar no tablet/celular.
+            Biblioteca organizada por objetivo, nível e categoria com +2.000 exercícios e ferramentas.
           </p>
         </div>
 
@@ -107,13 +102,13 @@ export default function PageCarousel() {
                 onClick={() => setCurrentIndex(idx)}
                 aria-label={`Ir para página ${idx + 1}`}
                 className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                  idx === currentIndex ? 'w-8 bg-orange-600' : 'w-2.5 bg-slate-300 hover:bg-slate-400'
+                  idx === currentIndex ? 'w-8 bg-green-600' : 'w-2.5 bg-slate-300 hover:bg-slate-400'
                 }`}
               ></button>
             ))}
           </div>
 
-          <p className="text-center text-xs sm:text-sm font-semibold text-orange-700 mt-2">
+          <p className="text-center text-xs sm:text-sm font-semibold text-green-800 mt-2">
             {pages[currentIndex].title} ({currentIndex + 1} de {pages.length})
           </p>
 

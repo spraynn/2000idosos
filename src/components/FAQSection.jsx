@@ -4,24 +4,36 @@ import { HelpCircle, ChevronDown } from 'lucide-react';
 export default function FAQSection() {
   const faqs = [
     {
-      q: 'Como vou receber o material?',
-      a: 'O acesso é imediato após a confirmação do pagamento. Você receberá o link de download direto no seu WhatsApp e no seu e-mail cadastrado.',
+      q: 'Como recebo o acesso?',
+      a: 'Após a confirmação do pagamento, você recebe as instruções para acessar a Central Sênior.',
     },
     {
-      q: 'Preciso de equipamentos pra aplicar as atividades?',
-      a: 'Não! O kit conta com exercícios com e sem equipamentos (como bastões, bolas e elásticos), adaptáveis para qualquer estrutura ou atendimento em domicílio.',
+      q: 'Funciona pelo celular?',
+      a: 'Sim. A Central Sênior foi pensada para ser acessada pelo celular, tablet ou computador.',
     },
     {
-      q: 'Serve para idosos com limitações físicas ou de mobilidade?',
-      a: 'Sim! As atividades são divididas por níveis e incluem bônus focados em idosos cadeirantes, com mobilidade reduzida ou em processo de recuperação física.',
+      q: 'Posso cadastrar meus alunos?',
+      a: 'Sim. A plataforma possui recursos para organizar seus alunos e facilitar o acompanhamento.',
     },
     {
-      q: 'O pagamento é único ou mensalidade?',
-      a: 'Pagamento único! Você paga apenas uma vez e tem acesso vitalício a todo o conteúdo e atualizações.',
+      q: 'Os exercícios ficam dentro da plataforma?',
+      a: 'Sim. A biblioteca de exercícios e atividades fica disponível dentro da Central Sênior.',
     },
     {
-      q: 'Tenho garantia se não me adaptar ao material?',
-      a: 'Sim, você tem 7 dias de garantia incondicional. Se por qualquer motivo achar que o material não é pra você, devolvemos 100% do seu dinheiro.',
+      q: 'Preciso instalar algum aplicativo?',
+      a: 'A Central pode ser acessada pelo navegador, sem depender de instalação de um aplicativo tradicional.',
+    },
+    {
+      q: 'Os exercícios são organizados?',
+      a: 'Sim. A biblioteca possui organização por categorias, objetivos e níveis para facilitar a busca.',
+    },
+    {
+      q: 'Posso usar os materiais profissionalmente?',
+      a: 'O acesso permite utilização no contexto profissional conforme os termos de licença apresentados no momento da compra.',
+    },
+    {
+      q: 'Receberei atualizações?',
+      a: 'Sim. A Central Sênior poderá receber novos conteúdos, melhorias e atualizações.',
     },
   ];
 
@@ -37,14 +49,14 @@ export default function FAQSection() {
         
         {/* Title Badge */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-full bg-orange-50 border border-orange-200">
-            <HelpCircle className="w-4 h-4 text-orange-600" />
-            <span className="text-xs font-bold uppercase tracking-wider text-orange-700">
-              Dúvidas Frequentes
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-full bg-green-50 border border-green-200">
+            <HelpCircle className="w-4 h-4 text-green-600" />
+            <span className="text-xs font-bold uppercase tracking-wider text-green-700">
+              Perguntas frequentes
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Perguntas <span className="gradient-heading italic">Frequentes</span>
+            Perguntas <span className="gradient-heading italic">frequentes</span>
           </h2>
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
         </div>
@@ -56,15 +68,15 @@ export default function FAQSection() {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-orange-300 transition-colors"
+                className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-green-300 transition-colors"
               >
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full px-6 py-5 text-left font-bold text-slate-900 text-base sm:text-lg flex items-center justify-between gap-4 hover:text-orange-700 transition-colors cursor-pointer"
+                  className="w-full px-6 py-5 text-left font-bold text-slate-900 text-base sm:text-lg flex items-center justify-between gap-4 hover:text-green-700 transition-colors cursor-pointer"
                 >
                   <span>{faq.q}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-orange-600 shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-green-600 shrink-0 transition-transform duration-300 ${
                       isOpen ? 'rotate-180' : ''
                     }`}
                   />

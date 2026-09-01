@@ -51,11 +51,9 @@ export default function TestimonialsSection() {
 
   const handleTouchEnd = () => {
     if (touchStartX.current - touchEndX.current > 40) {
-      // Swiped Left -> Next
       next();
     }
     if (touchEndX.current - touchStartX.current > 40) {
-      // Swiped Right -> Prev
       prev();
     }
   };
@@ -69,15 +67,15 @@ export default function TestimonialsSection() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-3 rounded-full bg-green-50 border border-green-200 shadow-xs">
             <MessageSquare className="w-4 h-4 text-green-600" />
             <span className="text-xs font-bold uppercase tracking-wider text-green-700">
-              Depoimentos Reais
+              Depoimentos de profissionais
             </span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            O Que Nossos <span className="gradient-heading italic">Clientes Dizem</span>
+            O que nossos <span className="gradient-heading italic">clientes estão dizendo</span>
           </h2>
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
           <p className="text-slate-600 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            Mensagens reais de profissionais que já estão aplicando o material no atendimento.
+            Profissionais que já utilizam os materiais e ferramentas da Central Sênior no dia a dia.
           </p>
         </div>
 

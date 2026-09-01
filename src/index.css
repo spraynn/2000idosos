@@ -15,13 +15,13 @@ html {
   font-family: 'Outfit', 'Montserrat', 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Custom Gradients & Styling Utilities */
+/* Custom Clean Gradients (No Orange & Green mixing) */
 .gradient-heading {
-  background: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f97316 100%);
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #22c55e 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 4px 16px rgba(249, 115, 22, 0.35));
+  filter: drop-shadow(0 4px 16px rgba(34, 197, 94, 0.35));
 }
 
 .gradient-heading-green {
@@ -30,6 +30,14 @@ html {
   background-clip: text;
   color: transparent;
   filter: drop-shadow(0 4px 16px rgba(34, 197, 94, 0.35));
+}
+
+.gradient-heading-orange {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #f97316 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 16px rgba(249, 115, 22, 0.35));
 }
 
 .gradient-heading-yellow {
@@ -41,7 +49,7 @@ html {
 }
 
 .gradient-bar {
-  background: linear-gradient(90deg, #16a34a, #ea580c 60%, #f97316);
+  background: linear-gradient(90deg, #15803d, #16a34a 60%, #22c55e);
 }
 
 .gradient-cta {
@@ -56,11 +64,11 @@ html {
 }
 
 .gradient-countdown {
-  background: linear-gradient(135deg, #ef4444, #f97316);
+  background: linear-gradient(135deg, #dc2626, #ef4444);
 }
 
 .gradient-icon {
-  background: linear-gradient(135deg, #ea580c, #f97316);
+  background: linear-gradient(135deg, #15803d, #16a34a);
 }
 
 .gradient-icon-green {
@@ -73,12 +81,12 @@ html {
 }
 
 .premium-card {
-  background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
-  border: 2px solid #f97316;
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+  border: 2px solid #22c55e;
 }
 
 .gradient-premium-badge {
-  background: linear-gradient(135deg, #c2410c, #ea580c, #f97316);
+  background: linear-gradient(135deg, #15803d, #16a34a, #22c55e);
 }
 
 @keyframes cta-pulse {

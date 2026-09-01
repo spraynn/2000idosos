@@ -1,55 +1,63 @@
 import React from 'react';
-import { Stethoscope, Flame, HeartHandshake } from 'lucide-react';
+import { Stethoscope, Dumbbell, HeartPulse } from 'lucide-react';
 
 export default function AudienceSection() {
   const audiences = [
     {
       icon: Stethoscope,
       title: 'Fisioterapeutas',
-      desc: 'Ideal pra quem precisa de mais variedade nos atendimentos. Com esse kit você chega na sessão sabendo exatamente oq vai aplicar, sem improvisar.',
+      subtitle: 'Para quem precisa de mais repertório para adaptar os atendimentos às necessidades de cada paciente.',
+      desc: 'Tenha diferentes possibilidades para trabalhar seus objetivos sem depender sempre dos mesmos exercícios.',
     },
     {
-      icon: Flame,
+      icon: Dumbbell,
       title: 'Educadores Físicos',
-      desc: 'Perfeito pra quem trabalha com turma de idosos e precisa de atividades organizadas, seguras e prontas pra usar no dia a dia.',
+      subtitle: 'Para quem trabalha com idosos individualmente ou em grupos e precisa de variedade para planejar suas atividades.',
+      desc: 'Mais opções para montar aulas e atendimentos diferentes.',
     },
     {
-      icon: HeartHandshake,
-      title: 'Cuidadores de Idosos',
-      desc: 'Mesmo sem formação técnica, dá pra oferecer muito mais qualidade de vida e estímulo físico com esse material. É simples e direto.',
+      icon: HeartPulse,
+      title: 'Profissionais da Terceira Idade',
+      subtitle: 'Cuidadores, terapeutas e profissionais que atuam diariamente no cuidado sênior.',
+      desc: 'Se você trabalha diariamente com a terceira idade e quer ter exercícios, atividades e ferramentas organizadas em um só lugar, a Central Sênior foi feita para você.',
     },
   ];
 
   return (
     <section className="px-4 py-16 bg-white border-t border-slate-100">
-      <div className="max-w-5xl mx-auto space-y-12">
+      <div className="max-w-5xl mx-auto space-y-10">
         
-        {/* Title */}
+        {/* Section Title */}
         <div className="text-center">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Para Quem É <span className="gradient-heading-green italic">Este Material</span>
+            Para quem é a <span className="gradient-heading italic">Central Sênior?</span>
           </h2>
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
         </div>
 
-        {/* 3 Audience Cards Grid */}
+        {/* 3 Audience Cards */}
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {audiences.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
                 key={idx}
-                className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col text-center"
+                className="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
               >
-                <div className="gradient-icon-green w-16 h-16 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg shadow-green-500/30">
-                  <Icon className="w-8 h-8 text-white" />
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-green-100 text-green-700 flex items-center justify-center mb-5 shadow-xs">
+                    <Icon className="w-7 h-7" />
+                  </div>
+                  <h3 className="font-bold text-xl text-slate-900 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-700 font-semibold text-sm mb-3 leading-snug">
+                    {item.subtitle}
+                  </p>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed flex-grow">
-                  {item.desc}
-                </p>
               </div>
             );
           })}
