@@ -25,36 +25,7 @@ export default function PricingSection({ onBasicClick }) {
   ];
 
   return (
-    <section id="pricing" className="px-4 py-16 bg-slate-50 scroll-mt-12 border-t border-slate-200 space-y-12">
-      
-      {/* Intro Pre-Pricing Summary */}
-      <div className="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md text-center space-y-6">
-        <div>
-          <h2 className="font-heading font-black text-2xl sm:text-4xl text-slate-900 mb-4">
-            Tudo isso em uma única Central
-          </h2>
-          <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm font-bold text-slate-700">
-            {['+2.000 exercícios', '+ atividades e dinâmicas', 'Cadastro de alunos', 'Fichas de acompanhamento', 'Ferramentas profissionais', 'Atualizações', '3 bônus exclusivos'].map((item, i) => (
-              <span key={i} className="px-3 py-1.5 rounded-full bg-green-50 border border-green-200 text-green-800">
-                ✓ {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="border-t border-slate-100 pt-6 space-y-3">
-          <h3 className="font-serif text-xl sm:text-2xl font-bold text-slate-900">
-            Quanto você pagaria por tudo isso?
-          </h3>
-          <p className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Uma biblioteca com milhares de exercícios. Uma plataforma para organizar seus alunos. Ferramentas para facilitar seus atendimentos. E novos conteúdos sendo adicionados.
-          </p>
-          <p className="text-slate-900 font-bold text-sm sm:text-base max-w-xl mx-auto">
-            Tudo isso poderia custar muito mais. Mas a Central Sênior foi criada para ser acessível para quem trabalha com idosos.
-          </p>
-        </div>
-      </div>
-
+    <section id="pricing" className="px-4 py-16 bg-slate-50 scroll-mt-12 border-t border-slate-200">
       <div className="max-w-5xl mx-auto space-y-10">
         
         {/* Section Title */}

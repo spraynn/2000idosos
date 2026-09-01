@@ -1,16 +1,7 @@
 import React from 'react';
-import { Gift, CheckCircle2 } from 'lucide-react';
+import { Gift } from 'lucide-react';
 
 export default function BonusSection() {
-  const whatYouGet = [
-    { title: '+2.000 Exercícios e Atividades para Idosos', desc: 'Uma biblioteca completa organizada por nível, objetivo e tipo de atividade.' },
-    { title: 'Acesso à Central Sênior', desc: 'Tenha acesso à plataforma pelo celular, tablet ou computador.' },
-    { title: 'Cadastro de alunos', desc: 'Organize seus alunos e facilite o acompanhamento dos seus atendimentos.' },
-    { title: 'Fichas e ferramentas profissionais', desc: 'Recursos para ajudar na organização das informações e do acompanhamento.' },
-    { title: 'Biblioteca organizada', desc: 'Encontre rapidamente diferentes exercícios e atividades para cada objetivo.' },
-    { title: 'Atualizações', desc: 'Novos conteúdos e melhorias adicionados à plataforma.' },
-  ];
-
   const bonuses = [
     {
       img: '/assets/bonus-mobilidade-new.png',
@@ -33,31 +24,7 @@ export default function BonusSection() {
   ];
 
   return (
-    <section className="px-4 py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-green-50/40 border-t border-slate-200 space-y-16">
-      
-      {/* O que você recebe Section */}
-      <div className="max-w-4xl mx-auto space-y-8">
-        <div className="text-center">
-          <h2 className="font-heading font-black text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
-            O que você <span className="gradient-heading italic">recebe</span>
-          </h2>
-          <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-4">
-          {whatYouGet.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex items-start gap-3">
-              <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-900 text-base">{item.title}</h3>
-                <p className="text-slate-600 text-sm mt-0.5">{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* 3 Bonus Section */}
+    <section className="px-4 py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-green-50/40 border-t border-slate-200">
       <div className="max-w-6xl mx-auto space-y-12">
         
         {/* Title Badge */}

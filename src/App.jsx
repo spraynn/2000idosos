@@ -3,6 +3,7 @@ import HeaderBar from './components/HeaderBar';
 import Hero from './components/Hero';
 import ValuePropSection from './components/ValuePropSection';
 import AppFeatureShowcase from './components/AppFeatureShowcase';
+import ArsenalSection from './components/ArsenalSection';
 import PageCarousel from './components/PageCarousel';
 import AudienceSection from './components/AudienceSection';
 import ObjectionsSection from './components/ObjectionsSection';
@@ -27,6 +28,7 @@ export default function App() {
         <Hero />
         <ValuePropSection />
         <AppFeatureShowcase />
+        <ArsenalSection />
         <PageCarousel />
         <AudienceSection />
         <ObjectionsSection />
