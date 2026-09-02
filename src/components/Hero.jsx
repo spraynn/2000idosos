@@ -50,13 +50,13 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.08] mb-5">
-          <span className="text-green-600 block sm:inline">+2000 EXERCÍCIOS</span>
-          <span className="text-slate-900 block sm:inline"> PARA IDOSOS</span>
+          <span className="text-green-600 block sm:inline">A CENTRAL COMPLETA </span>
+          <span className="text-slate-900 block sm:inline">PARA QUEM TRABALHA COM IDOSOS</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-          Muito mais que exercícios: uma plataforma completa com ferramentas para organizar seus alunos, montar fichas e facilitar seus atendimentos. <span className="inline-block animate-pulse">🧓✨</span>
+          +2.000 exercícios e atividades + ferramentas para organizar seus alunos, fichas e atendimentos em um só lugar. <span className="inline-block animate-pulse">🧓✨</span>
         </p>
 
         {/* Key Bullet Pills */}
