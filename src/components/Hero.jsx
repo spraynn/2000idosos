@@ -56,7 +56,7 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-          exercícios adaptados, organizados por nível e objetivo para transformar seus atendimentos <span className="inline-block animate-pulse">🧓✨</span>
+          Muito mais que exercícios: uma plataforma completa com ferramentas para organizar seus alunos, montar fichas e facilitar seus atendimentos. <span className="inline-block animate-pulse">🧓✨</span>
         </p>
 
         {/* Key Bullet Pills */}
