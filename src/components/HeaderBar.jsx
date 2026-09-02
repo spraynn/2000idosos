@@ -10,20 +10,20 @@ export default function HeaderBar() {
 
   const scrollToPricing = (e) => {
     e.preventDefault();
-    const element = document.getElementById('pricing-cards') || document.getElementById('pricing');
+    const element = document.getElementById('pricing') || document.getElementById('pricing-cards');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
   return (
-    <header className="relative md:sticky md:top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <header className="hidden md:block md:sticky md:top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
       {/* Top Red Urgency Notification */}
       <div className="bg-red-600 text-white py-1.5 px-4 text-center font-extrabold text-xs sm:text-sm tracking-wide uppercase shadow-xs">
         <span>Oferta Válida Somente Hoje {formattedDate}</span>
       </div>
 
-      {/* Main Navigation Bar */}
+      {/* Main Navigation Bar (Desktop Only) */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         
         {/* Left Side: Desktop Menu Esquerdo (Logo + Status Badge) */}
@@ -43,7 +43,7 @@ export default function HeaderBar() {
 
         {/* Right Side: Navigation Links & CTA Button */}
         <div className="flex items-center gap-4 sm:gap-6">
-          <div className="hidden md:flex items-center gap-6 text-xs sm:text-sm font-bold text-slate-700">
+          <div className="flex items-center gap-6 text-xs sm:text-sm font-bold text-slate-700">
             <a href="#pricing" onClick={scrollToPricing} className="hover:text-green-600 transition-colors">
               Exercícios
             </a>

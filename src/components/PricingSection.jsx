@@ -36,7 +36,7 @@ export default function PricingSection({ onBasicClick }) {
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
         </div>
 
-        {/* Pricing Cards Grid: Complete Plan (R$27,90) FIRST, Essential Plan (R$9,90) SECOND */}
+        {/* Pricing Cards Grid: Complete Plan (R$27,90) FIRST, Basic Plan (R$9,90) SECOND */}
         <div id="pricing-cards" className="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto scroll-mt-20">
           
           {/* 1ST PLACE: COMPLETE PLAN CARD (R$27,90 - HIGHLIGHTED) */}
@@ -106,15 +106,15 @@ export default function PricingSection({ onBasicClick }) {
               className="gradient-cta flex items-center justify-center w-full px-8 py-5 rounded-full text-white font-extrabold text-base sm:text-lg uppercase tracking-wider shadow-xl transition-all cursor-pointer transform active:scale-95"
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
-              QUERO ACESSAR A CENTRAL SÊNIOR
+              QUERO O ACESSO COMPLETO
             </a>
           </div>
 
-          {/* 2ND PLACE: ESSENTIAL PLAN CARD (R$9,90) */}
+          {/* 2ND PLACE: BASIC PLAN CARD (R$9,90) */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative hover:border-slate-300 transition-all">
             <div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-center mb-1 text-slate-900 uppercase">
-                ACESSO ESSENCIAL
+                ACESSO BÁSICO
               </h3>
               <p className="text-center text-sm font-semibold text-slate-500 mb-6">
                 Para começar
@@ -152,7 +152,7 @@ export default function PricingSection({ onBasicClick }) {
               className="w-full text-center px-6 py-4 rounded-full bg-slate-800 hover:bg-slate-900 text-white font-extrabold uppercase text-sm shadow-md transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
             >
               <ShoppingCart className="w-4 h-4" />
-              QUERO ACESSAR A CENTRAL
+              QUERO O ACESSO BÁSICO
             </button>
           </div>
 
