@@ -99,7 +99,7 @@ export default function Hero() {
             onClick={scrollToPricing}
             className="gradient-cta inline-flex items-center justify-center w-full px-8 py-5 rounded-full text-white font-extrabold text-lg sm:text-xl uppercase tracking-wider shadow-2xl transition-all duration-300 transform active:scale-95 cursor-pointer"
           >
-            CONHEÇA A CENTRAL SÊNIOR
+            ENTRAR AGORA!
             <ArrowRight className="w-6 h-6 ml-2 animate-pulse" />
           </a>
           <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-600 font-semibold">

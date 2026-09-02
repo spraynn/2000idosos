@@ -17,7 +17,7 @@ export default function HeaderBar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <header className="relative md:sticky md:top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
       {/* Top Red Urgency Notification */}
       <div className="bg-red-600 text-white py-1.5 px-4 text-center font-extrabold text-xs sm:text-sm tracking-wide uppercase shadow-xs">
         <span>Oferta Válida Somente Hoje {formattedDate}</span>
