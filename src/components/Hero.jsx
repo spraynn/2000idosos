@@ -82,13 +82,13 @@ export default function Hero() {
           />
         </div>
 
-        {/* Video Player Section (Wistia VSL d0sxohd3av) */}
+        {/* Video Player Section (Wistia VSL 6x5ykbkahy) */}
         <div className="mt-10 mb-8 max-w-xs sm:max-w-sm mx-auto">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center justify-center gap-2">
             Assista esse vídeo para ver o que vai receber:
           </h2>
           <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900">
-            <wistia-player media-id="d0sxohd3av" aspect="0.5625"></wistia-player>
+            <wistia-player media-id="6x5ykbkahy" aspect="0.5625"></wistia-player>
           </div>
         </div>
 
