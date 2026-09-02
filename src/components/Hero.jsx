@@ -50,13 +50,13 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 leading-[1.08] mb-5">
-          <span className="text-green-600 block sm:inline">A CENTRAL COMPLETA </span>
-          <span className="text-slate-900 block sm:inline">PARA QUEM TRABALHA COM IDOSOS</span>
+          <span className="text-green-600 block sm:inline">+2.000 EXERCÍCIOS </span>
+          <span className="text-slate-900 block sm:inline">E ATIVIDADES PARA IDOSOS</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-          +2.000 exercícios e atividades + ferramentas para organizar seus alunos, fichas e atendimentos em um só lugar. <span className="inline-block animate-pulse">🧓✨</span>
+          Uma plataforma completa com exercícios, ferramentas e recursos para organizar seus alunos, fichas e atendimentos em um só lugar. <span className="inline-block animate-pulse">🧓✨</span>
         </p>
 
         {/* Key Bullet Pills */}
@@ -92,8 +92,16 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Block below VSL */}
         <div className="max-w-md mx-auto space-y-3">
+          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-red-100 border border-red-200 text-red-700 font-extrabold text-xs uppercase tracking-wider">
+            🔥 OFERTA ESPECIAL
+          </div>
+
+          <div className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+            ACESSO A PARTIR DE <span className="text-green-600 font-extrabold">R$9,90</span>
+          </div>
+
           <a
             href="#pricing"
             onClick={scrollToPricing}
@@ -102,9 +110,10 @@ export default function Hero() {
             ENTRAR AGORA!
             <ArrowRight className="w-6 h-6 ml-2 animate-pulse" />
           </a>
-          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-600 font-semibold">
-            <ShieldCheck className="w-4 h-4 text-green-600" />
-            <span>Acesso imediato · Plataforma online · Garantia de 7 dias</span>
+
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-600 font-semibold pt-1">
+            <ShieldCheck className="w-4 h-4 text-green-600 shrink-0" />
+            <span>Pagamento único • Acesso digital • Garantia de 7 dias</span>
           </div>
         </div>
 

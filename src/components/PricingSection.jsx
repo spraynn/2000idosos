@@ -36,10 +36,56 @@ export default function PricingSection({ onBasicClick }) {
           <div className="w-20 h-1.5 gradient-bar mx-auto rounded-full mt-4"></div>
         </div>
 
-        {/* Pricing Cards Grid: Complete Plan (R$27,90) FIRST, Basic Plan (R$9,90) SECOND */}
+        {/* Pricing Cards Grid: Basic Plan (R$9,90) FIRST, Complete Plan (R$27,90) SECOND */}
         <div id="pricing-cards" className="grid md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto scroll-mt-20">
           
-          {/* 1ST PLACE: COMPLETE PLAN CARD (R$27,90 - HIGHLIGHTED) */}
+          {/* 1ST PLACE: BASIC PLAN CARD (R$9,90) */}
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative hover:border-slate-300 transition-all">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-extrabold text-center mb-1 text-slate-900 uppercase">
+                ACESSO BÁSICO
+              </h3>
+              <p className="text-center text-sm font-semibold text-slate-500 mb-6">
+                Para começar
+              </p>
+
+              <div className="text-center mb-4">
+                <div className="text-slate-400 line-through text-sm font-semibold">R$97</div>
+                <div className="text-4xl sm:text-5xl font-extrabold text-slate-900 my-1">
+                  R$9,90
+                </div>
+                <div className="text-xs text-slate-500 font-medium">pagamento único</div>
+              </div>
+
+              <div className="flex justify-center mb-6">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 border border-green-200">
+                  <MessageCircle className="w-3.5 h-3.5 text-green-600" />
+                  <span className="text-[10px] font-bold uppercase tracking-wide text-green-700">
+                    Entrega via WhatsApp
+                  </span>
+                </div>
+              </div>
+
+              <ul className="space-y-3 text-sm text-slate-700 mb-8 border-t border-slate-100 pt-6">
+                {essentialItems.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-2.5">
+                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                    <span className="text-slate-800 font-semibold">{item.txt}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <button
+              onClick={onBasicClick}
+              className="w-full text-center px-6 py-4 rounded-full bg-slate-800 hover:bg-slate-900 text-white font-extrabold uppercase text-sm shadow-md transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
+            >
+              <ShoppingCart className="w-4 h-4" />
+              QUERO O ACESSO BÁSICO
+            </button>
+          </div>
+
+          {/* 2ND PLACE: COMPLETE PLAN CARD (R$27,90 - HIGHLIGHTED - EMBAIXO DO BÁSICO) */}
           <div className="premium-card rounded-3xl p-6 sm:p-8 shadow-2xl shadow-green-500/20 relative flex flex-col justify-between border-2 border-green-600">
             
             {/* Highlight Badge */}
@@ -108,52 +154,6 @@ export default function PricingSection({ onBasicClick }) {
               <ShoppingCart className="w-5 h-5 mr-2" />
               QUERO O ACESSO COMPLETO
             </a>
-          </div>
-
-          {/* 2ND PLACE: BASIC PLAN CARD (R$9,90) */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative hover:border-slate-300 transition-all">
-            <div>
-              <h3 className="text-xl sm:text-2xl font-extrabold text-center mb-1 text-slate-900 uppercase">
-                ACESSO BÁSICO
-              </h3>
-              <p className="text-center text-sm font-semibold text-slate-500 mb-6">
-                Para começar
-              </p>
-
-              <div className="text-center mb-4">
-                <div className="text-slate-400 line-through text-sm font-semibold">R$97</div>
-                <div className="text-4xl sm:text-5xl font-extrabold text-slate-900 my-1">
-                  R$9,90
-                </div>
-                <div className="text-xs text-slate-500 font-medium">pagamento único</div>
-              </div>
-
-              <div className="flex justify-center mb-6">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 border border-green-200">
-                  <MessageCircle className="w-3.5 h-3.5 text-green-600" />
-                  <span className="text-[10px] font-bold uppercase tracking-wide text-green-700">
-                    Entrega via WhatsApp
-                  </span>
-                </div>
-              </div>
-
-              <ul className="space-y-3 text-sm text-slate-700 mb-8 border-t border-slate-100 pt-6">
-                {essentialItems.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5">
-                    <Check className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                    <span className="text-slate-800 font-semibold">{item.txt}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <button
-              onClick={onBasicClick}
-              className="w-full text-center px-6 py-4 rounded-full bg-slate-800 hover:bg-slate-900 text-white font-extrabold uppercase text-sm shadow-md transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
-            >
-              <ShoppingCart className="w-4 h-4" />
-              QUERO O ACESSO BÁSICO
-            </button>
           </div>
 
         </div>
