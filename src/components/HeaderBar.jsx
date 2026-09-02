@@ -17,14 +17,14 @@ export default function HeaderBar() {
   };
 
   return (
-    <header className="hidden md:block md:sticky md:top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-      {/* Top Red Urgency Notification */}
-      <div className="bg-red-600 text-white py-1.5 px-4 text-center font-extrabold text-xs sm:text-sm tracking-wide uppercase shadow-xs">
-        <span>Oferta Válida Somente Hoje {formattedDate}</span>
+    <header className="relative md:sticky md:top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+      {/* Top Red Urgency Notification (VISIBLE ON MOBILE AND DESKTOP) */}
+      <div className="bg-red-600 text-white py-2 px-4 text-center font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs">
+        <span>OFERTA VÁLIDA SOMENTE HOJE {formattedDate}</span>
       </div>
 
-      {/* Main Navigation Bar (Desktop Only) */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      {/* Main Navigation Bar (DESKTOP ONLY) */}
+      <div className="hidden md:flex max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 items-center justify-between">
         
         {/* Left Side: Desktop Menu Esquerdo (Logo + Status Badge) */}
         <div className="flex items-center gap-3">
